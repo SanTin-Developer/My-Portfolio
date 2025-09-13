@@ -454,7 +454,7 @@ export default function App() {
               {skills.map((skill, index) => (
                 <main
                   key={skill.name}
-                  className={`group h-[30vh] w-[20] border-[1px] hover:shadow-blue-500/30 p-4 rounded-2xl hover:rounded-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl  cursor-pointer backdrop-blur-sm shadow-sm    ${
+                  className={`group h-[30vh] w-[50vh] border-[1px] hover:shadow-blue-500/30 p-4 rounded-2xl hover:rounded-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl  cursor-pointer backdrop-blur-sm shadow-sm    ${
                     isDarkMode
                       ? "bg-slate-800/80 border-slate-700 hover:border-blue-500"
                       : "bg-white/80 border-slate-200 hover:border-blue-300"
