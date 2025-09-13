@@ -447,14 +447,14 @@ export default function App() {
           data-section="skills"
         >
           <div className="container mx-auto px-6">
-            <h2 className="text-5xl font-serif font-bold text-center mb-16 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <h2 className="text-5xl lg:grid-cols-1 font-serif font-bold text-center mb-16 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               Skills & Expertise
             </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className=" grid md:grid-cols-2 min-w-sm  sm:grid-cols-1 sm:justify-center lg:grid-cols-3 gap-10 max-w-7xl mx-auto ">
               {skills.map((skill, index) => (
                 <main
                   key={skill.name}
-                  className={`group h-[30vh] w-[50vh] border-[1px] hover:shadow-blue-500/30 p-4 rounded-2xl hover:rounded-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl  cursor-pointer backdrop-blur-sm shadow-sm    ${
+                  className={`group  border-[1px] hover:shadow-blue-500/30 p-4 rounded-2xl hover:rounded-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl  cursor-pointer backdrop-blur-sm shadow-sm    ${
                     isDarkMode
                       ? "bg-slate-800/80 border-slate-700 hover:border-blue-500"
                       : "bg-white/80 border-slate-200 hover:border-blue-300"
@@ -506,7 +506,7 @@ export default function App() {
             <h2 className="text-5xl font-serif font-bold text-center mb-16 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               My Work
             </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+            <div className="grid md:grid-cols-2 sm:grid-cols-1 sm:justify-center lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
               {projects.map((project, index) => (
                 <nav
                   key={project.title}
