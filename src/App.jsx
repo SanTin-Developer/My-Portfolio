@@ -179,7 +179,7 @@ export default function App() {
               : "bg-white/90 border-slate-200/50"
           }`}
         >
-          <div className="container mx-auto px-36 py-4">
+          <div className="container mx-auto px-36 py-4 lg:px-10">
             <div className="flex items-center justify-between">
               <h1
                 className={`text-2xl font-serif font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text ${
@@ -189,7 +189,7 @@ export default function App() {
                 O.SanTin
               </h1>
               <div className="flex items-center space-x-6">
-                <div className="hidden md:flex space-x-8">
+                <div className="hidden md:flex space-x-8 lg:text-10">
                   {["home", "about", "skills", "works", "contact"].map(
                     (item) => (
                       <a
@@ -447,7 +447,7 @@ export default function App() {
           data-section="skills"
         >
           <div className="container mx-auto px-6">
-            <h2 className="text-5xl lg:grid-cols-1 font-serif font-bold text-center mb-16 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <h2 className="text-5xl lg:grid-cols-1 lg:max-w[2400px] font-serif font-bold text-center mb-16 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               Skills & Expertise
             </h2>
             <div className=" grid md:grid-cols-2 min-w-sm  sm:grid-cols-1 sm:justify-center lg:grid-cols-3 gap-10 max-w-7xl mx-auto ">
